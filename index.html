@@ -139,7 +139,7 @@
             </ul>
         </div>
         <div class="information-class">
-            <p class="my-information">&copy 2020 Written by Omisha Patel</p>
+            <p class="my-information">Copyright &copy; Everest Web Design <span id="date">2021</span>. All Rights Reserved</p>
         </div>
         <div class="float-right">
             
@@ -152,6 +152,8 @@
     </footer>
     <script>
         document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+        const date = document.getElementById('date');
+        date.innerHTML = new Date().getFullYear();
     </script>
 </body>
 </html>
